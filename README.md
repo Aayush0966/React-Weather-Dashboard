@@ -45,7 +45,7 @@ To get started with the Weather Dashboard, follow these steps:
 
 ## 🌐 Demo
 
-Check out the live demo [here](YOUR_DEMO_LINK_HERE)!
+Check out the live demo [here](https://aayush0966.github.io/React-Weather-Dashboard/)!
 
 
 ## 🤝 Contributing
