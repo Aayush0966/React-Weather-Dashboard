@@ -17,7 +17,7 @@ function Dashboard() {
 
   const getData = async (city) => {
     try {
-      const latlongUrl = `http://api.openweathermap.org/geo/1.0/direct?q=${city}&limit=1&appid=feab85386e21bf607e19ff3b449d52a5`;
+      const latlongUrl = `https://api.openweathermap.org/geo/1.0/direct?q=${city}&limit=1&appid=feab85386e21bf607e19ff3b449d52a5`;
       const latlongRes = await fetch(latlongUrl);
       const latlongData = await latlongRes.json();
   
