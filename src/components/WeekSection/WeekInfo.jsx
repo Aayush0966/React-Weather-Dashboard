@@ -70,7 +70,7 @@ function WeekInfo() {
 
   const getData = async () => {
     try {
-      const hourlyUrl = `https://api.openweathermap.org/data/2.5/forecast?lat=${cityDetails.lat}&lon=${cityDetails.lon}&appid=feab85386e21bf607e19ff3b449d52a5&units=metric`;
+      const hourlyUrl = `https://api.openweathermap.org/data/2.5/forecast?lat=${cityDetails.lat}&lon=${cityDetails.lon}&appid=YOUR_API_KEY&units=metric`;
       const res = await fetch(hourlyUrl);
       if (!res.ok) throw new Error('Error fetching weather data');
 
