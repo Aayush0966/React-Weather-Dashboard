@@ -17,7 +17,7 @@ function Dashboard() {
 
   const getData = async (city) => {
     try {
-      const latlongUrl = `https://api.openweathermap.org/geo/1.0/direct?q=${city}&limit=1&appid=feab85386e21bf607e19ff3b449d52a5`;
+      const latlongUrl = `https://api.openweathermap.org/geo/1.0/direct?q=${city}&limit=1&appid=YOUR_API_KEY`;
       const latlongRes = await fetch(latlongUrl);
       const latlongData = await latlongRes.json();
   
@@ -25,7 +25,7 @@ function Dashboard() {
   
       const { lat, lon } = latlongData[0];
   
-      const weatherUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=feab85386e21bf607e19ff3b449d52a5&units=celsius`;
+      const weatherUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=YOUR_API_KEY&units=celsius`;
       const res = await fetch(weatherUrl);
       if (!res.ok) throw new Error('City not found');
       const data = await res.json();
